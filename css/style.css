@@ -1,0 +1,169 @@
+/* Import _misc */
+/* Color scheme */
+/* Fonts */
+@font-face {
+  font-family: '';
+  src: url("../fonts/");
+  src: url("../fonts/") format("embedded-opentype"), url("../fonts/") format("woff2"), url("../fonts/") format("woff"), url("../fonts/") format("truetype"), url("../fonts/") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Fonts mixin */
+/* Base settings */
+* + * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+/* Main styles */
+.accordion {
+  text-align: center;
+  background: url("/img/background-image.png");
+  height: 100vh;
+}
+
+.accordion-header {
+  position: relative;
+  color: #0bbaf0;
+  text-transform: uppercase;
+}
+
+.accordion-header h1 {
+  font-size: 3.6rem;
+}
+
+.accordion-header small {
+  font-size: 2.4rem;
+}
+
+.accordion-header small:after {
+  content: '';
+  height: 1px;
+  width: 10rem;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.accordion-body {
+  margin-top: 3rem;
+}
+
+.accordion-body ul {
+  list-style: none;
+}
+
+.accordion-body li {
+  margin: 0 auto;
+  width: 90rem;
+}
+
+.accordion-body li > a {
+  display: block;
+  margin-bottom: .5rem;
+  padding: 2rem;
+  font-size: 2.4rem;
+  color: #fff;
+  background: #0bbaf0;
+}
+
+.accordion-body li > a:hover {
+  text-decoration: none;
+}
+
+.accordion-body li p {
+  display: none;
+  margin: -.5rem .5rem 0rem .5rem;
+  background: #ffffff;
+  padding: 1.4rem 3rem 4rem 3rem;
+  font-size: 2.2rem;
+  text-align: justify;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-top: none;
+  border-radius: 0 0 .7rem .7rem;
+}
+
+#content-1 {
+  display: block;
+}
+
+.tabs {
+  background: #ebebeb;
+  height: 100vh;
+  text-align: left;
+}
+
+.tab-header {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 3rem 1rem 0rem 0rem;
+  background: #7b97ad;
+  padding: 1.3rem;
+  border-radius: .4rem .4rem 0 0;
+  cursor: pointer;
+}
+
+.tab-header-container {
+  margin: 0 auto;
+  width: 60rem;
+  margin-bottom: 3rem;
+}
+
+.tab-header-1-form_block label, .tab-header-1-form_block input, .tab-header-1-form_block textarea {
+  width: 100%;
+  resize: none;
+}
+
+.tab-header-1-form_block input {
+  height: 3.3rem;
+}
+
+.tab-header-1-form_block textarea {
+  height: 14.75rem;
+}
+
+.tab-body-content {
+  display: none;
+}
+
+.tab-body-container {
+  font-size: 1.3rem;
+  color: #425666;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.tab-button {
+  padding: 1rem;
+  border-radius: 40px;
+  border: none;
+  background: #7cc70f;
+  color: #ffffff;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+form {
+  text-align: left;
+  margin: 0 auto;
+  width: 60rem;
+}
+
+.tab-content-1 {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,144 @@
+/* Import _misc */
+@import '_misc/_colors';
+@import '_misc/_fonts';
+@import '_misc/_mixin';
+
+/* Base settings */
+* + * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+}
+
+
+/* Main styles */
+
+.accordion {
+    text-align: center;
+    background: url('/img/background-image.png');
+    height: 100vh;
+    &-header {
+        position: relative;
+        color: $primary;
+        text-transform: uppercase;
+        h1 {
+            font-size: 3.6rem;
+        }
+        small {
+            font-size: 2.4rem;
+            &:after {
+                content: '';
+                height: 1px;
+                width: 10rem;
+                background: rgba(0,0,0,.2);
+                position: absolute;
+                bottom: -1rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    &-body {
+        margin-top: 3rem;
+        ul {
+            list-style: none;
+        }
+        li {
+            margin: 0 auto;
+            width: 90rem;
+            > a {
+                display: block;
+                margin-bottom: .5rem;
+                padding: 2rem;
+                font-size: 2.4rem;
+                color: #fff;
+                background: $primary;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            p {
+                display: none;
+                margin: -.5rem .5rem 0rem .5rem;
+                background: #ffffff;
+                padding: 1.4rem 3rem 4rem 3rem;
+                font-size: 2.2rem;
+                text-align: justify;
+                border: 3px solid rgba(0,0,0,.2);
+                border-top: none;
+                border-radius: 0 0 .7rem .7rem;
+            }
+        }
+    }
+}
+#content-1 {
+    display: block;
+}
+
+.tabs {
+    background: #ebebeb;
+    height: 100vh;
+    text-align: left;
+    
+}
+.tab {
+    &-header {
+        display: inline-block;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 3rem 1rem 0rem 0rem;
+        background: $tabs-color;
+        padding: 1.3rem;
+        border-radius: .4rem .4rem 0 0;
+        cursor: pointer;
+        &-container {
+            margin: 0 auto;
+            width: 60rem;
+            margin-bottom: 3rem;
+        }
+        &-1-form_block {
+            label, input, textarea {
+                width: 100%;
+                resize: none;
+            }
+            input {
+                height: 3.3rem;
+            }
+            textarea {
+                height: 14.75rem;
+            }
+        }
+    }
+    &-body-content {
+        display: none;
+    }
+    &-body-container {
+        font-size: 1.3rem;
+        color: #425666;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    &-button {
+        padding: 1rem;
+        border-radius: 40px;
+        border: none;
+        background: #7cc70f;
+        color: #ffffff;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+form {
+    text-align: left;
+    margin: 0 auto;
+    width: 60rem;
+}
+.tab-content-1 {
+    display: block;
+}
